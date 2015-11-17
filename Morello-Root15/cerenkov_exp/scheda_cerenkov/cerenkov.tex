@@ -1,0 +1,157 @@
+\documentclass[a4paper,9pt]{article}
+\usepackage[italian]{babel}
+%\usepackage[textwidth=15cm,textheight=20cm]{geometry}
+\usepackage[textwidth=16cm,textheight=24cm]{geometry}
+
+%\pagestyle{empty}
+
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{lscape}
+\usepackage{mathrsfs}
+\usepackage[abs]{overpic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{hyperref}
+
+
+
+% \oddsidemargin .4cm
+% \topmargin 0cm
+% \headsep .5cm
+% \textheight 23.5cm
+% \textwidth 15.9cm
+% \topskip .6cm
+% \setlength{\unitlength}{1mm}
+
+\renewcommand{\baselinestretch}{1.2}
+\renewcommand{\arraystretch}{1.9}
+\newcommand{\sep}{\hspace{0.1cm}}
+\newcommand{\back}{\hspace*{-1.5cm}}
+
+
+
+\begin{document}
+
+\begin{center}
+{\Large Esercitazione per il corso di Laboratorio di Interazioni Fondamentali  \\
+%\vspace{0.5cm}
+Anno Accademico 2015/2016\\
+\vspace{0.2cm}
+Laurea Magistrale in Fisica dell'Universit\`a di Pisa}\\
+\end{center}
+
+\vspace{1cm}
+\noindent
+\textit{Nota: Questa esperienza di analisi dati \`e stata ideata dal Dr Sergio Giudici per il Corso di Laboratorio 
+di Interazioni Fondamentali del Prof. Marco Sozzi del Corso di Laurea Magistrale in Fisica dell'Universit\`a di Pisa 
+nell'anno accademico 2013/14, che si trova in
+\href{http://www.df.unipi.it/~giudici/analisi_dati.html}{http://www.df.unipi.it/$\sim$giudici/analisi\_dati.html}.
+Mentre nella versiona originale il fit al cerchio, per stimare i parametri $R,x_0, y_0$, veniva effetuato analiticamente con 
+il metodo dei minimi quadrati, in questo caso si vuole utilizzare il software MINUIT nel framework ROOT per  
+minimizzare l'estimatore.}
+
+\vspace{1cm}
+Un fascio di particelle di energia 120 GeV/$c^2$ contiene mesoni $K^+$ e $\pi^+$ rispettivamente di massa 0.493~GeV/$c^2$ e 0.139~GeV/$c^2$. 
+Tramite un rivelatore ad effetto Cerenkov piazzato lungo il fascio \`e  possibile discriminare tra le due particelle.
+I fotoni ottici sono prodotti quando la particella carica del fascio attraversa un recipiente di lunghezza 1000~cm riempito di gas opportuno. 
+I fotoni sono riflessi da uno specchio parabolico di lunghezza focale pari a 1000 cm posto al fondo del recipiente e vengono riflessi sul piano focale. 
+Il piano focale \`e segmentato in 50 x 50 pixel (1cm x 1cm ) otticamente attivi che registrano l'arrivo dei fotoni ottici.
+A valle del contatore Cerenkov, a 9000 cm da esso, \`e posto uno scintillatore che registra il passaggio dei muoni emessi nel corso dei decadimenti
+ $K,\pi \to \mu \nu_{\mu}$. Lo scintillatore è una corona circolare di raggio interno 10 cm e raggio esterno 100 cm.
+\vspace{0.5cm}
+%%%%%%%%%%%%%%%
+\begin{figure}[h] 
+\begin{center} 
+%\small
+%\footnotesize
+\scriptsize 
+\begin{overpic}[width=7cm]{./cerenkov_schema.pdf}
+\put(-25,82){$K,\pi$}
+\put(-40,70){120~GeV/$c^2$}
+\put(17,5){z=0 cm}
+\put(93,5){z=1000 cm}
+\put(169,5){z=10000 cm}
+\put(-10,140){Piano focale}
+\put(16,52){Radiatore Cerenkov}
+\put(70,127){Specchio}
+\put(70,117){parabolico}
+\put(70,107){f=1000 cm}
+\put(155,148){Scintillatore}
+\put(110,90){$\mu$}
+\put(122,83.5){$\theta$}
+%\put(197,35){$\theta_{\rm max}$}
+%\put(88,150){$E$}
+\end{overpic}   
+\hspace{1cm}
+\begin{overpic}[width=7cm]{./cerenkov_grid.pdf}
+\put(28,30){\rotatebox{90}{$i_y=1,2,3,.................,50.$}}
+\put(55,15){$i_x=1,2,3,.................,50.$}
+%\put(88,35){$\theta_0$}
+%\put(56,35){$\theta_{\rm min}$}
+%\put(197,35){$\theta_{\rm max}$}
+%\put(88,150){$E$}
+\end{overpic}   
+\label{fig:schema}
+\caption{Schema.}
+\end{center} 
+\end{figure} 
+%%%%%%%%%%%%%%
+%%%%%%%
+I pixel otticamente attivi posti sul piano focale sono identificati secondo un sistema cartesiano.
+%%%%%%%%
+%%%%%%%
+%% METTERE FIGURA %%%
+%%%%%%%%%
+%%%%%%%
+%\landscape{$i=1,2,3,.................50$}
+Il fascio passa nel centro del quadrato 50 x 50. Ogni pixel  \`e identificato dal numero intero $$i_x \cdot 1000 + i_y = s.$$ 
+Fate l'esercizio di trovare le coordinate intere $i_x$ e $i_y$ dato l'intero $s$. Allo scopo \`e utile ricordare l'operazione 
+aritmetica ``modulo'' (a \texttt{mod} b). Nel file \texttt{cerenkov.dat.gz} (da unzippare con il comando linux ``gunzip'', 
+per ogni evento sono date le seguenti informazioni:
+\begin{itemize}
+\item numero di tracce cariche viste dallo scintillatore,
+\item numero di pixel colpiti,
+\item coordinate dei pixel colpiti nella forma $i_x \cdot 1000 + i_y$.
+\end{itemize}
+Per esempio, un evento con 1 muone e 10 pixel colpiti ha la forma\\
+1\\ 
+10\\ 
+2013\\
+7043\\
+7044\\ 
+9045\\ 
+10003\\ 
+11003\\ 
+12002\\ 
+12047\\ 
+15049\\ 
+23050.\\
+
+\noindent
+Si dimostri che nel corso di un evento
+\begin{enumerate}
+\item[1.] i fotoni ottici si dispongono sul piano focale lungo un cerchio.
+\item[2.] e si ricavi un'espressione per il raggio del cerchio in funzione della massa della particella e dell'indice di rifrazione del gas contenuto nel contatore.
+\end{enumerate}
+Seguendo l'algoritmo di fit ad un cerchio descritto nella nota allegata, si ricostruisca per ciascun evento il raggio dell'anello Cerenkov e si trovi:
+\begin{enumerate}
+\item[3.] la frazione di mesoni K contenuti nel fascio (stimando l'errore),
+\item[4.] l'indice di rifrazione del gas contenuto nel contatore (stimando l'errore),
+\item[5.] si dimostri che il muone emesso dal mesoni $\pi$ non pu\`o mai essere visto dallo scintillatore,
+\item[6.] si definisca un intervallo per il raggio dell'anello $r_1 < r < r_2$ che definisce i mesoni $K$ e si stimi la probabilit\`a che un mesone $K$, 
+  non sia identificato e la probabilit\`a che un mesone $\pi$ sia confuso con un mesone $K$. Quali accorgimenti si potrebbero adottare per ridurre 
+i casi di identificazione sbagliata ?
+\end{enumerate}
+
+
+\thispagestyle{empty} %% toglie il numero di pagina
+
+\end{document}
+
+
+
+
+
