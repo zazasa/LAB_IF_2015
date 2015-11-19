@@ -1,0 +1,46 @@
+Piccola guida a GIT. http://rogerdudler.github.io/git-guide/index.it.html
+
+Git è nato per il lavoro di gruppo in ambito di programmazione ma ciò non impedisce di usarlo in altri ambiti come la stesura di un documento.
+
+Un repository git è un insieme di file apparentemente incomprensibili (guardare cartella dropbox condivisa LAB_IF_2015_git) che contengono tutti i file relativi al tuo progetto oltre che a tutta la progressione delle modifiche e tante altre info a riguardo.
+
+Il vantaggio che ne possiamo trarre è essenzialmente nella velocità di download e upload/merge delle modifiche e nella gestione nei conflitti che capitano quando si modifica lo stesso file.
+
+Ovviamente va prima scaricato e installato per il vostro sistema, ma credo ci possiate riuscire da soli.
+
+Essenzialmente i comandi che ci interessano sono i seguenti (i comandi OS dipendenti non li scrivo esplicitamente):
+
+Creare una cartella di lavoro, entrarci dentro, e CLONARE il repository che ho creato su dropbox col comando:
+
+-> git clone (cartella del repository) .
+
+es. In linux:
+
+mkdir ~/Laboratorio
+cd ~/Laboratorio
+git clone ~/Dropbox/git/Lab_IF_2015_git/ (<- questo è dove compare il repository sul mio filesystem)
+
+
+A questo punto nella cartella vi compare il repository (non i file illeggibili ma quelli veri).
+
+Ogni volta che si fa una modifica bisogna dire a GIT di "registrare" (o committare) questa modifica (bisogna essere sempre nella cartella del repository):
+
+-> git commit -a  (a questo punto verrà richiesto di inserire un commento al commit)
+
+nel caso siano stati creati dei file e si vogliano aggiungere al repository:
+
+-> git add -A 
+
+A questo punto la vostra modifica sarà stata committata in locale. 
+Per inviarla sul repository condiviso su dropbox:
+
+-> git push origin master (origin è l'alias del repository, master è il branch ma questo al momento non importa)
+
+Per richiamare eventuali modifiche fatte da qualcun'altro sul repository remoto:
+
+-> git pull origin master
+
+per ora, se vi va, potete provare a fare queste operazioni e scrivermi in whatsupp in caso di problemi. Oppure si continua ad aggiornare dropbox a mano. 
+Poi se è il caso aggiungo altri comandi a questa miniguida.
+
+Salam.
