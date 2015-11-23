@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.8)  20 NOV 2015 20:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.8)  20 NOV 2015 20:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,7 +608,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4198 strings out of 495017
  53676 string characters out of 6181021
- 133345 words of memory out of 5000000
+ 133347 words of memory out of 5000000
  7326 multiletter control sequences out of 15000+600000
  8262 words of font info for 20 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -619,9 +619,9 @@ alvo/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/salvo/.texmf
 pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salvo/.texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb>
-Output written on relazione.pdf (2 pages, 65481 bytes).
+Output written on relazione.pdf (2 pages, 66597 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
+ 219 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
