@@ -1,5 +1,6 @@
 Piccola guida carina a GIT. http://rogerdudler.github.io/git-guide/index.it.html
 
+
 Git è nato per il lavoro di gruppo in ambito di programmazione ma ciò non impedisce di usarlo in altri ambiti come la stesura di un documento.
 
 Un repository git è un insieme di file apparentemente incomprensibili (guardare cartella dropbox condivisa LAB_IF_2015_git) che contengono tutti i file relativi al tuo progetto oltre che a tutta la progressione delle modifiche e tante altre info a riguardo.
