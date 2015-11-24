@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.8)  20 NOV 2015 20:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.8)  23 NOV 2015 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,7 +598,7 @@ LaTeX Warning: Reference `fig:none' on page 1 undefined on input line 117.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Reference `fig:none' on page 2 undefined on input line 128.
+LaTeX Warning: Reference `fig:none' on page 2 undefined on input line 130.
 
 [2] (./relazione.aux)
 
@@ -619,7 +619,7 @@ alvo/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/salvo/.texmf
 pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salvo/.texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb>
-Output written on relazione.pdf (2 pages, 66597 bytes).
+Output written on relazione.pdf (2 pages, 66623 bytes).
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
