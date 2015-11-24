@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 Piccola guida a GIT. http://rogerdudler.github.io/git-guide/index.it.html
+=======
+Piccola guida merdosa a GIT. http://rogerdudler.github.io/git-guide/index.it.html
+
+>>>>>>> 7c7d0e32572e610daf2421b7d5bf4db301f31fae
 
 
 Git è nato per il lavoro di gruppo in ambito di programmazione ma ciò non impedisce di usarlo in altri ambiti come la stesura di un documento.
