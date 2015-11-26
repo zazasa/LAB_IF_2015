@@ -1,0 +1,171 @@
+\documentclass[a4paper,10pt]{article}
+%\usepackage[english]{babel}   % se si scrive in inglese
+\usepackage[italian]{babel}       % se si scrive in italiano
+\usepackage[T1]{fontenc}       % serve per la codifica delle lettere accentate (per evitare di scrivere \`e) 
+\usepackage[utf8]{inputenc}   % serve per la codifica delle lettere accentate (per evitare di scrivere \`e)
+
+\usepackage{graphicx}  % per includere le figure
+\usepackage{rotating}   
+\usepackage{lscape}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage[abs]{overpic}
+\usepackage{color}
+\usepackage{layout}
+\usepackage[textwidth=16cm,textheight=24cm]{geometry} 
+
+
+%% Definizione di nuovi commandi %%%
+\newcommand{\latex}{\LaTeX}
+\newcommand{\CP}{{\rm CP}}
+\newcommand{\proton}{\ensuremath{p}}
+\newcommand{\antiproton}{\ensuremath{\bar{p}}}
+\newcommand{\acp}{\ensuremath{{\cal A}_{\CP}}}
+\newcommand{\Lbppi}{\ensuremath{\Lambda_{b}^{0} \rightarrow p\pi^{-}}}
+\newcommand{\aLbppi}{\ensuremath{\bar{\Lambda}_{b}^{0} \rightarrow \bar{p}\pi^{+}}}
+\newcommand{\acplbppi}{\ensuremath{\acp(\Lbppi)}}
+\newcommand{\lambdazero}{\ensuremath{\Lambda}}
+\newcommand{\alambdazero}{\ensuremath{\bar{\Lambda}}}
+\newcommand{\lambdazeroppi}{\ensuremath{\lambdazero \to \proton\pi^-}}
+\newcommand{\alambdazeroppi}{\ensuremath{\bar{\lambdazero} \to \antiproton \pi^+}}
+
+\newcommand{\pt}{\ensuremath{p_{\rm{T}}}}
+\newcommand{\lxy}{\ensuremath{L_{\rm{T}}}}
+\newcommand{\pdf}{\ensuremath{\wp}}
+
+\newcommand{\mum}{\mbox{$\mu$m}}				%	um
+\newcommand{\mus}{\mbox{$\mu$s}}
+\newcommand{\tev}{\ensuremath{\mathrm{Te\kern -0.1em V}}}
+\newcommand{\gev}{\ensuremath{\mathrm{Ge\kern -0.1em V}}}	%	GeV
+\newcommand{\mev}{\ensuremath{\mathrm{Me\kern -0.1em V}}}	%	MeV
+\newcommand{\kev}{\ensuremath{\mathrm{ke\kern -0.1em V}}}	%	keV
+\newcommand{\massgev}{\mbox{\gev/$c^2$}}			%	GeV/c^2
+\newcommand{\massmev}{\mbox{\mev/$c^2$}}			%	MeV/c^2
+\newcommand{\pgev}{\mbox{\gev/$c$}}				%	GeV/c
+\newcommand{\pmev}{\mbox{\mev/$c$}}				%	MeV/c
+
+\newcommand{\note}[1]{\textcolor{red}{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% BEGIN DOCUMENT %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{flushright}             
+\today
+\end{flushright} 
+
+\begin{center}
+\Large{\bf Condizioni di lavoro di un contatore a scintillazione. }
+
+\vspace*{1cm}                                 
+\large{Michael De Nuccio, Fabio Spagliardi, Giacomi Vitali, Salvatore Zaza }\\ 
+\vspace*{0.5cm}       
+\vspace*{1.cm}
+\end{center}
+
+%{ \abstract  
+%}
+
+
+\section{Introduzione}
+\label{sec:intro} 
+Lo scopo dell'esperienza è quello di acquisire pratica con la strumentazione tipica del laboratorio e mettere a punto un sistema di tre rilevatori a scintillatore plastico. Si vuole inoltre valutare un adeguato punto di lavoro per poi stimare l'efficienza di uno dei tre rilevatori e la rilevanza del rumore rispetto al segnale vero.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Raggi comici}
+Come si può facilmente evincere dal nome, i raggi cosmici sono raggi di varia natura provenienti dal cosmo; la loro origine non è ancora totalmente eviscerata, in particolare per quanto riguarda quelli ad altissima energia. La loro origine spazia dal Sole alle quasar ai confini dell'universo osservabile, e la loro natura è eterogenea: per lo più si tratta di protoni e particelle alfa, ma si hanno anche elettroni, positroni, fotoni, neutrini...\\
+Al livello del mare però non si osservano tali specie: negli urti con le molecole dell'atmosfera si hanno varie reazioni con la conseguente produzione dei cosiddetti raggi cosmici secondari. Questi ultimi si dividono a loro volta in molli e duri a seconda della capacità di penetrazione, e se i primi vengono arrestati da pochi cm di materiale, i secondi possono penetrarvi anche per molti metri (con un range che ovviamente cresce al crescere del'energia).\\
+I raggi cosmici secondari duri sono costituiti quasi interamente da muoni ($\mu^{\pm}$), e saranno questi che andremo per lo più a cercare coi nostri scintillatori plastici.\\
+È quindi ovvio che siamo interessati ad una stima del numero di conteggi attesi.\\
+Abbiamo dei valori "tabulati" per il flusso a livello del mare pari a\\
+\\
+$\Phi\footnote{http://pdg.lbl.gov/2011/reviews/rpp2011-rev-cosmic-rays.pdf, pag.6;\\http://hyperphysics.phy-astr.gsu.edu/hbase/particles/muonatm.html}(\mu)\approx1$ cm$^{-1}$min$^{-1}$\\
+\\
+Gli scintillatori adoperati hanno dimensioni $(55\pm1)$ cm $\times$ $(27\pm1)$ cm. La superficie risulta quindi $S=1485\pm61$ cm$^{2}$, con un conseguente rate di eventi attesi pari a:\\
+\\
+$R(\mu)\simeq(25\pm1)$ eventi/s
+\\
+\\(avendo assunto nullo l'errore sul numero "noto" di eventi e avendo propagato il resto in quadratura)
+
+\section{Apparato Sperimentale}
+In figura \ref{fig:none} è schematizzano l'apparato sperimentale. E' composto da tre scintillatori collegati tramite una guida d'onda ad un fotomoltiplicatore (PMT). Faremo riferimento ai 3 tramite il numero associato al loro PMT (come in figura).
+\\I PMT sono alimentati tramite un modulo dell'alta tensione (HV). 
+\\Per l'osservazione e l'acquisizione dei segnali dai PMT abbiamo utilizzato i seguenti strumenti elettronici:
+\begin{itemize}
+\item Multimetro digitale;
+\item Oscilloscopio a 2 canali;
+\item Modulo FAN-IN FAN-OUT per lo smistamento dei segnali;
+\item Discriminatore NIM a 8 canali;
+\item Diversi moduli per il delay dei segnali;
+\item Un modulo NIM per le coincidenze;
+\item Un contatore digitale NIM con timer;
+\end{itemize}
+
+
+\label{sec:apparato} 
+\subsection{Scintillatore Plastico}
+Uno scintillatore plastico è composto da una lastra di materiale organico capace di emettere fotoni quando viene attraversato da una particella ionizzante. 
+
+\subsection{PhotoMultiplier Tube (PMT)}
+
+\subsection{Elettronica di Front-End}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Ricerca del punto di lavoro}
+\label{sec:puntodilavoro} 
+\subsection{Calibrazione del discriminatore e del contatore}
+Abbiamo preventivamente testato l'affidabilità del discriminatore, con particolare attenzione alla proporzionalità fra la soglia di threshold effettiva e la tensione rilevata sul pin predisposto. Era atteso, stando al data sheet, un rapporto 1:10.\\
+Per far ciò ci siamo muniti di un impulsatore al fine di avere a disposizione una tensione regolabile. Visionata essa con l'oscilloscopio si è mandato tale segnale anche al discriminatore, mandando pure il segnale di quest'ultimo all'oscilloscopio.\\
+Partiti dalla threshold minima ($\approx320$ mV misurati al pin) l'abbiamo aumentata lasciando inizialmente invariata l'ampiezza dell'onda quadra proveniente dall'impulsatore, $\approx80$ mV, fino a che non è scomparso il segnale proveniente dal discriminatore. Notato il voltaggio segnato dal pin abbiamo poi aumentato progressivamente l'ampiezza dell'onda quadra e continuato ad aumentare la threshold fino a che nuovamente il segnale dal discriminatore non scompariva. Testata la diretta proporzionalità entro la zona nella quale contavamo di operare abbiamo accertato il rapporto 1:10 entro un $\sim2\%$.
+\\Per quanto concerne la verifica della frequenza di pulsazione del contatore abbiamo semplicemente attaccato l'uscita del contatore stesso all'oscilloscopio ed osservato la forma d'onda e la frequenza della stessa. Essa è risultata essere, come atteso, un'onda quadra, e la frequenza era di $1000\pm$ Hz per tutte le durate temporali scandagliate: 1 s, 10 s, 100 s, che sono state quelle poi adoperate nel corso dell'esperienza.
+
+\subsection{Osservazioni preliminari}
+Inizialmente abbiamo alimentate il PMT4 con una tensione di 1.700 V, osservando un assorbimento in corrente di 0,693 mA. Collegando il segnale all'oscilloscopio ed impostando una soglia di trigger di 30 mV abbiamo visualizzato impulsi della durata dai 25 ai 31 ns, di ampiezza molto variabile dai 30 ai 750 mV, ad una frequenza dell'ordine dei kHz.
+\\
+Quindi abbiamo collegato il PMT ad un contatore tramite un discriminatore, impostato con una soglia a 50mV e una larghezza del segnale di uscita di 40ns. In questo modo abbiamo preso le misure mostrate nel grafico \ref{fig:none}, che mostra una netta differenza nei conteggi in caso di luce accesa o spenta, segnalandoci la possibile presenza di imperfezioni nella copertura esterna.
+\\
+Nelle prossime misure abbiamo cercato di limitare questo effetto ricoprendo l'apparato con un panno nero.
+\\
+Per le misure dei conteggi abbiamo scelto di adottare un tempo di acquisizione di 100s, risultato come compromesso fra l'avere una quantità di dati adeguata sia ai tempi di lavoro necessari ad effettuare praticamente la presa dati sia per avere delle fluttuazioni sui dati stessi abbastanza piccole, avendo le fluttuazioni relative un andamento del tipo $1\over{\sqrt{N}}$, con N=numero di misure.
+\subsection{Curva in funzione della tensione di alimentazione}
+Abbiamo alimentato tutti e 3 PMT con una tensione variabile da 1600 a 1900 mV. Il segnale dei 3 PMT lo abbiamo collegato ad un contatore passando attraverso un discriminatore per il conteggio degli impulsi.\\
+Osservando il segnale sull'oscilloscopio abbiamo deciso di impostare una soglia di 50 mV, ed una larghezza del segnale di uscita del discriminatore di 40 ns. 
+Il grafico \ref{fig:none} mostra il numero dei conteggi in funzione della tensione di alimentazione. Si può osservare come i PMT 4 e 6 mostrano un andamento molto simile mentre il PMT 5 sembra essere molto più sensibile.
+\\
+Da queste misure risulta difficile individuare un plateau, ma ci sono comunque tornate utili in futuro per la scelta di un punto di lavoro che presenti una minima variazione del tasso dei conteggi in funzione della tensione.
+\\
+Il numero dei conteggi e molto variabile e non ci permette di stabilire una relazione col numero di raggi cosmici attesi. D'altra parte ci aspettiamo che un singolo scintillatore presenti una quantità di conteggi dovuti al rumore di fondo molto maggiore del numero di conteggi dovuti al passaggio di particelle ionizzanti, ed è per questo che possiamo giustificare conteggi anche molto elevati.
+
+\subsection{Calibrazione delle coincidenze}
+Utilizzando i dati in tabella [mettere tabella foglio excel 1], abbiamo calcolato il rate di frequenze casuali attese tra il PMT 4 e 6. In questo modo abbiamo stabilito che mantenendoci al di sotto di una soglia di alimentazione di 1900 V il numero di coincidenze casuali si mantiene comunque basso per non inficiare in maniera significativa sul conteggio di coincidenze reali che ci aspettiamo.
+
+\subsubsection{Ritardo di cavo}
+
+\subsubsection{Misura delle coincidenze casuali}
+
+
+\section{Misura dell'efficienza}
+\note{definizione dell'efficienza}
+\subsection{Risultati}
+\label{sec:efficienza} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusioni}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\appendix
+
+
+\end{document}
