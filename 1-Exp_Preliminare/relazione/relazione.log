@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.8)  27 NOV 2015 17:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.8)  29 NOV 2015 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -683,117 +683,113 @@ LaTeX Info: Redefining \nameref on input line 53.
 \@outlinefile=\write3
 \openout3 = `relazione.out'.
 
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 81.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 82.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 79--92
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--92
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--92
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--92
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
-<fig/apparato_sperimentale.pdf, id=69, 436.63126pt x 198.8915pt>
+<fig/apparato_sperimentale.pdf, id=65, 436.63126pt x 198.8915pt>
 File: fig/apparato_sperimentale.pdf Graphic file (type pdf)
 
 <use fig/apparato_sperimentale.pdf>
-Package pdftex.def Info: fig/apparato_sperimentale.pdf used on input line 96.
+Package pdftex.def Info: fig/apparato_sperimentale.pdf used on input line 99.
 (pdftex.def)             Requested size: 455.24408pt x 207.37032pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 110.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./fig/apparato_sperime
-ntale.pdf>]
+ntale.pdf>] [3]
 
-LaTeX Warning: Reference `fig:none' on page 3 undefined on input line 153.
+LaTeX Warning: Reference `fig:none' on page 4 undefined on input line 164.
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 157.
+(amsmath)                 on input line 170.
 
-[3] <fig/rate-hv.pdf, id=111, 569.12625pt x 284.06125pt>
+<fig/rate-hv.pdf, id=107, 569.12625pt x 284.06125pt>
 File: fig/rate-hv.pdf Graphic file (type pdf)
  <use fig/rate-hv.pdf>
-Package pdftex.def Info: fig/rate-hv.pdf used on input line 164.
+Package pdftex.def Info: fig/rate-hv.pdf used on input line 177.
 (pdftex.def)             Requested size: 455.24408pt x 227.23195pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
-
- []
-
 [4 <./fig/rate-hv.pdf, page is rotated 90 degrees>]
-<fig/random_coincidence.pdf, id=162, 569.12625pt x 284.06125pt>
+<fig/random_coincidence.pdf, id=158, 569.12625pt x 284.06125pt>
 File: fig/random_coincidence.pdf Graphic file (type pdf)
 
 <use fig/random_coincidence.pdf>
-Package pdftex.def Info: fig/random_coincidence.pdf used on input line 226.
+Package pdftex.def Info: fig/random_coincidence.pdf used on input line 240.
 (pdftex.def)             Requested size: 455.24408pt x 227.23195pt.
 
-<fig/coincidence.pdf, id=165, 569.12625pt x 284.06125pt>
+<fig/coincidence.pdf, id=161, 569.12625pt x 284.06125pt>
 File: fig/coincidence.pdf Graphic file (type pdf)
 
 <use fig/coincidence.pdf>
-Package pdftex.def Info: fig/coincidence.pdf used on input line 233.
+Package pdftex.def Info: fig/coincidence.pdf used on input line 247.
 (pdftex.def)             Requested size: 455.24408pt x 227.23195pt.
 
-<fig/delay_curve.pdf, id=168, 569.12625pt x 284.06125pt>
+<fig/delay_curve.pdf, id=165, 569.12625pt x 284.06125pt>
 File: fig/delay_curve.pdf Graphic file (type pdf)
 
 <use fig/delay_curve.pdf>
-Package pdftex.def Info: fig/delay_curve.pdf used on input line 262.
+Package pdftex.def Info: fig/delay_curve.pdf used on input line 278.
 (pdftex.def)             Requested size: 455.24408pt x 227.23195pt.
  [5] [6 <./fig/random_coincidence.pdf, page is rotated 90 degrees> <./fig/coinc
 idence.pdf, page is rotated 90 degrees>] [7 <./fig/delay_curve.pdf, page is rot
 ated 90 degrees>]
-<fig/efficiency.pdf, id=329, 569.12625pt x 284.06125pt>
+<fig/efficiency.pdf, id=326, 569.12625pt x 284.06125pt>
 File: fig/efficiency.pdf Graphic file (type pdf)
 
 <use fig/efficiency.pdf>
-Package pdftex.def Info: fig/efficiency.pdf used on input line 297.
+Package pdftex.def Info: fig/efficiency.pdf used on input line 314.
 (pdftex.def)             Requested size: 455.24408pt x 227.23195pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
  [8 <./fig/efficiency.pdf, page is rotated 90 degrees>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
 (./relazione.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
 Package rerunfilecheck Info: File `relazione.out' has not changed.
-(rerunfilecheck)             Checksum: D31807AB75A3C2A2B21169AEC499DEDD;1110.
+(rerunfilecheck)             Checksum: 6741FFD8ED442D034C03CBADD0F120D7;1064.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7796 strings out of 495017
- 108764 string characters out of 6181021
- 218684 words of memory out of 5000000
- 10839 multiletter control sequences out of 15000+600000
+ 7794 strings out of 495017
+ 108744 string characters out of 6181021
+ 219684 words of memory out of 5000000
+ 10838 multiletter control sequences out of 15000+600000
  14111 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,9n,28p,1305b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,9n,28p,1305b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/salvo/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/s
 alvo/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salvo/.texmf
 -var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/salvo/.texmf-var/fonts/
@@ -809,10 +805,10 @@ nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy7.pfb>
-Output written on relazione.pdf (8 pages, 695860 bytes).
+Output written on relazione.pdf (8 pages, 693858 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 36 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -75,15 +75,18 @@ Lo scopo dell'esperienza è quello di acquisire pratica con la strumentazione ti
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Raggi comici}
-Come si può facilmente evincere dal nome, i raggi cosmici sono raggi di varia natura provenienti dal cosmo; la loro origine non è ancora totalmente eviscerata, in particolare per quanto riguarda quelli ad altissima energia. La loro origine spazia dal Sole alle quasar ai confini dell'universo osservabile, e la loro natura è eterogenea: per lo più si tratta di protoni e particelle alfa, ma si hanno anche elettroni, positroni, fotoni, neutrini...\\
-Al livello del mare però non si osservano tali specie: negli urti con le molecole dell'atmosfera si hanno varie reazioni con la conseguente produzione dei cosiddetti raggi cosmici secondari. Questi ultimi si dividono a loro volta in molli e duri a seconda della capacità di penetrazione, e se i primi vengono arrestati da pochi cm di materiale, i secondi possono penetrarvi anche per molti metri (con un range che ovviamente cresce al crescere del'energia).\\
-I raggi cosmici secondari duri sono costituiti quasi interamente da muoni ($\mu^{\pm}$), e saranno questi che andremo per lo più a cercare coi nostri scintillatori plastici.\\
-È quindi ovvio che siamo interessati ad una stima del numero di conteggi attesi.\\
+\section{Raggi cosmici}
+Come si può facilmente evincere dal nome, i raggi cosmici sono raggi di varia natura provenienti dal cosmo; la loro origine non è ancora totalmente eviscerata, in particolare per quanto riguarda quelli ad altissima energia. La loro origine spazia dal Sole alle quasar ai confini dell'universo osservabile, e la loro natura è eterogenea: per lo più si tratta di protoni e particelle alfa, ma si hanno anche elettroni, positroni, fotoni, neutrini...
+
+Al livello del mare però non si osservano tali specie: negli urti con le molecole dell'atmosfera si hanno varie reazioni con la conseguente produzione dei cosiddetti raggi cosmici secondari. Questi ultimi si dividono a loro volta in molli e duri a seconda della capacità di penetrazione, e se i primi vengono arrestati da pochi cm di materiale, i secondi possono penetrarvi anche per molti metri (con un range che ovviamente cresce al crescere del'energia).
+I raggi cosmici secondari duri sono costituiti quasi interamente da muoni ($\mu^{\pm}$), e saranno questi che andremo per lo più a cercare coi nostri scintillatori plastici.
+
+È quindi ovvio che siamo interessati ad una stima del numero di conteggi attesi.
+
 Abbiamo dei valori "tabulati" per il flusso a livello del mare pari a\\
-\\
+
 $\Phi\footnote{http://pdg.lbl.gov/2011/reviews/rpp2011-rev-cosmic-rays.pdf, pag.6;\\http://hyperphysics.phy-astr.gsu.edu/hbase/particles/muonatm.html}(\mu)\approx1$ cm$^{-1}$min$^{-1}$\\
-\\
+
 Gli scintillatori adoperati hanno dimensioni $(55\pm1)$ cm $\times$ $(27\pm1)$ cm. La superficie risulta quindi $S=1485\pm61$ cm$^{2}$, con un conseguente rate di eventi attesi pari a:\\
 \\
 $R(\mu)\simeq(25\pm1)$ eventi/s
@@ -98,9 +101,11 @@ $R(\mu)\simeq(25\pm1)$ eventi/s
 \label{fig:apparato}
 \end{figure}
 
-In figura \ref{fig:apparato} è schematizzato l'apparato sperimentale, composto da tre scintillatori ognuno dei quali collegati tramite una guida d'onda ad un fotomoltiplicatore (PMT). Faremo riferimento ai 3 tramite il numero associato al loro PMT (come in figura).
-\\I PMT sono alimentati tramite un modulo dell'alta tensione (HV). 
-\\Per l'osservazione e l'acquisizione dei segnali dai PMT abbiamo utilizzato i seguenti strumenti elettronici:
+In figura \ref{fig:apparato} è schematizzano l'apparato sperimentale. E' composto da tre scintillatori collegati tramite una guida d'onda ad un fotomoltiplicatore (PMT). Faremo riferimento ai 3 tramite il numero associato al loro PMT (come in figura).
+
+I PMT sono alimentati tramite un modulo dell'alta tensione (HV). 
+
+Per l'osservazione e l'acquisizione dei segnali dai PMT abbiamo utilizzato i seguenti strumenti elettronici:
 \begin{itemize}
 \item multimetro digitale;
 \item oscilloscopio a 2 canali;
@@ -116,12 +121,15 @@ In figura \ref{fig:apparato} è schematizzato l'apparato sperimentale, composto 
 \label{sec:apparato} 
 
 \subsection{Scintillatore Plastico}
-Uno scintillatore plastico è composto da una lastra di materiale plastico in cui è dissolta una sostanza organica capace di emettere fotoni quando viene attraversato da una particella ionizzante. Si tratta di rilevatori veloci che si prestano bene ad essere utilizzati per realizzare contatori: infatti i tempi tipici sono dell'ordine del nanosecondo. La luce emessa dalla diseccitazione degli elettroni eccitati dal passaggio della particella ionizzante si propaga all'interno del rivelatore attraverso il meccanismo della riflessione totale. Il fotone emesso non viene riassorbito grazie al principio di Franck-Condon. La luce si riflette fino all'estremità dello scintillatore dove continua a propagarsi in una guida di luce, la quale permette di raccordare la superficie del rivelatore con il fotomoltiplicatore. \\
+Uno scintillatore plastico è composto da una lastra di materiale plastico in cui è dissolta una sostanza organica capace di emettere fotoni quando viene attraversato da una particella ionizzante. Si tratta di rilevatori veloci che si prestano bene ad essere utilizzati per realizzare contatori: infatti i tempi tipici sono dell'ordine del nanosecondo. La luce emessa dalla diseccitazione degli elettroni eccitati dal passaggio della particella ionizzante si propaga all'interno del rivelatore attraverso il meccanismo della riflessione totale. Il fotone emesso non viene riassorbito grazie al principio di Franck-Condon. La luce si riflette fino all'estremità dello scintillatore dove continua a propagarsi in una guida di luce, la quale permette di raccordare la superficie del rivelatore con il fotomoltiplicatore.
+
 Nel nostro caso i tre scintillatori sono ricoperti da scotch nero. Ciò permette di isolare dalla luce ambientale e, allo stesso tempo, si riesce a lasciare uno strato d'aria tra la superficie esterna del rilevatore e lo scotch: ciò è ottimale per avere riflessione totale alle superficie.
 
 \subsection{PhotoMultiplier Tube (PMT)}
-Ognuno dei tre scintillatori è collegato ad un fotomoltiplicatore. Non si dispone di un datasheet per il modello utilizzato.\\
-Un fotomoltiplicatore, in generale, è formato da una sequenza di elettrodi (detti dinodi, la cui geometria può essere molto variabile). Agli estremi di questa sequenza sono presenti un anodo e un catodo. Il fotone che esce dallo scintillatore si trova ad interagire con il catodo tramite effetto fotoelettrico (effetto dominante considerate le energie a cui si lavora, ovvero qualche KeV). Grazie al campo elettrico introdotto tramite la differenza di potenziale tra catodo e anodo i primi, e relativamente pochi, elettroni prodotti vengono accelerati e, mediante ionizzazione per urto con gli elettrodi interposti, si innesca un fenomeno a cascata che porta ad aumentare il numero di elettroni che vengono via via accelerati. Per essere più quantitativi si può considerare il numero di elettroni che vengono estratti ad ogni elettrodo: $\delta=2\div 5$; il guadagno totale in elettroni sarà quindi $G=\delta ^N$ dove $N$ è il numero totale di dinodi. Solitamente il catodo viene messo a massa e l'anodo viene tenuto ad una tensione elevata (1000-2000 $V$); tramite un partitore di tensione i dinodi vengono mantenuti a tensioni intermedie opportune. Alla fine di questo processo si osserva un segnale elettrico macroscopico.\\
+Ognuno dei tre scintillatori è collegato ad un fotomoltiplicatore. Non si dispone di un datasheet per il modello utilizzato.
+
+Un fotomoltiplicatore, in generale, è formato da una sequenza di elettrodi (detti dinodi, la cui geometria può essere molto variabile). Agli estremi di questa sequenza sono presenti un anodo e un catodo. Il fotone che esce dallo scintillatore si trova ad interagire con il catodo tramite effetto fotoelettrico (effetto dominante considerate le energie a cui si lavora, ovvero qualche KeV). Grazie al campo elettrico introdotto tramite la differenza di potenziale tra catodo e anodo i primi, e relativamente pochi, elettroni prodotti vengono accelerati e, mediante ionizzazione per urto con gli elettrodi interposti, si innesca un fenomeno a cascata che porta ad aumentare il numero di elettroni che vengono via via accelerati. Per essere più quantitativi si può considerare il numero di elettroni che vengono estratti ad ogni elettrodo: $\delta=2\div 5$; il guadagno totale in elettroni sarà quindi $G=\delta ^N$ dove $N$ è il numero totale di dinodi. Solitamente il catodo viene messo a massa e l'anodo viene tenuto ad una tensione elevata (1000-2000 $V$); tramite un partitore di tensione i dinodi vengono mantenuti a tensioni intermedie opportune. Alla fine di questo processo si osserva un segnale elettrico macroscopico.
+
 Per stimare l'ampiezza di questo segnale si può ricorrere ad un calcolo veloce: tipicamente si trova che il numero di fotoni prodotti è $2\times 10^{4}$ per centimento di spessore del rilevatore. Facendo un calcolo indicativo si ottiene il numero di fotoni che effettivamente giungono al fotomoltiplicatore è circa $1400$, numero ottenuto considerando l'efficacia di raccolta della luce da parte della guida, il rapporto tra le interfacce di scintillatore e PMT e l'attenuazione esponenzialmente decrescente con la distanza, durante la propagazione. Si definisce il parametro $\eta$, detto "efficienza quantica", come la frazione di fotoni che riescono a fare un effetto fotoelettrico efficace. Di conseguenza, moltiplicando per $\eta$, si ottengono 350 fotoelettroni. Se si considera come guadagno tipico di un PMT $G=\delta ^N=3^{12}=5 \times 10^5$ si ottengono all'anodo $1,8 \times 10^8$ elettroni, ovvero una carica di 29 pC. Considerato che questa carica è spalmata in un intervallo temporale dell'ordine di 10 ns si ottiene un'intensità di corrente $I=3$ mA che equivale, con una resistenza standardizzata all'anodo di $50\ \Omega$, ad un segnale dell'ordine di 150 mV. Questo tipo di segnale è facilmente visualizzabile e misurabile tramite un oscilloscopio.
 
 
@@ -142,18 +150,23 @@ L'elettronica di Front-End è composta dai moduli, digitali e analogici, indicat
 \section{Ricerca del punto di lavoro}
 \label{sec:puntodilavoro} 
 \subsection{Calibrazione del discriminatore e del contatore}
-Abbiamo preventivamente testato l'affidabilità del discriminatore, con particolare attenzione alla proporzionalità fra la soglia di threshold effettiva e la tensione rilevata sul pin predisposto. Era atteso, stando al data sheet, un rapporto 1:10.\\
-Per far ciò ci siamo muniti di un impulsatore al fine di avere a disposizione una tensione regolabile. Visionata essa con l'oscilloscopio si è mandato tale segnale anche al discriminatore, mandando pure il segnale di quest'ultimo all'oscilloscopio.\\
+Abbiamo preventivamente testato l'affidabilità del discriminatore, con particolare attenzione alla proporzionalità fra la soglia di threshold effettiva e la tensione rilevata sul pin predisposto. Era atteso, stando al data sheet, un rapporto 1:10.
+
+Per far ciò ci siamo muniti di un impulsatore al fine di avere a disposizione una tensione regolabile. Visionata essa con l'oscilloscopio si è mandato tale segnale anche al discriminatore, mandando pure il segnale di quest'ultimo all'oscilloscopio.
+
 Partiti dalla threshold minima ($\approx320$ mV misurati al pin) l'abbiamo aumentata lasciando inizialmente invariata l'ampiezza dell'onda quadra proveniente dall'impulsatore, $\approx80$ mV, fino a che non è scomparso il segnale proveniente dal discriminatore. Notato il voltaggio segnato dal pin abbiamo poi aumentato progressivamente l'ampiezza dell'onda quadra e continuato ad aumentare la threshold fino a che nuovamente il segnale dal discriminatore non scompariva. Testata la diretta proporzionalità entro la zona nella quale contavamo di operare abbiamo accertato il rapporto 1:10 entro un $\sim2\%$.
 \\Per quanto concerne la verifica della frequenza di pulsazione del contatore abbiamo semplicemente attaccato l'uscita del contatore stesso all'oscilloscopio ed osservato la forma d'onda e la frequenza della stessa. Essa è risultata essere, come atteso, un'onda quadra, e la frequenza era di $1000\pm$ Hz per tutte le durate temporali scandagliate: 1 s, 10 s, 100 s, che sono state quelle poi adoperate nel corso dell'esperienza.
 
 \subsection{Osservazioni preliminari}
 Inizialmente abbiamo alimentate il PMT4 con una tensione di 1.700 V, osservando un assorbimento in corrente di 0,693 mA. Collegando il segnale all'oscilloscopio ed impostando una soglia di trigger di 30 mV abbiamo visualizzato impulsi della durata dai 25 ai 31 ns, di ampiezza molto variabile dai 30 ai 750 mV, ad una frequenza dell'ordine dei kHz.
-\\
+
+
 Quindi abbiamo collegato il PMT ad un contatore tramite un discriminatore, impostato con una soglia a 50mV e una larghezza del segnale di uscita di 40ns. In questo modo abbiamo preso le misure mostrate nel grafico \ref{fig:none}, che mostra una netta differenza nei conteggi in caso di luce accesa o spenta, segnalandoci la possibile presenza di imperfezioni nella copertura esterna.
-\\
+
+
 Nelle prossime misure abbiamo cercato di limitare questo effetto ricoprendo l'apparato con un panno nero.
-\\
+
+
 Per le misure dei conteggi abbiamo scelto di adottare un tempo di acquisizione di 100s, risultato come compromesso fra l'avere una quantità di dati adeguata sia ai tempi di lavoro necessari ad effettuare praticamente la presa dati sia per avere delle fluttuazioni sui dati stessi abbastanza piccole, avendo le fluttuazioni relative un andamento del tipo $1\over{\sqrt{N}}$, con N=numero di misure.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,7 +178,8 @@ Per le misure dei conteggi abbiamo scelto di adottare un tempo di acquisizione d
 \caption{Numeri di conteggi ogni 100 secondi al variare della tensione di alimentazione dei PMT.}
 \label{fig:rate-hv}
 \end{figure}
-Abbiamo alimentato tutti e 3 PMT con una tensione variabile da 1600 a 1900 mV. Abbiamo collegato il segnale dei 3 PMT ad un contatore passando attraverso un discriminatore per il conteggio degli impulsi.\\
+Abbiamo alimentato tutti e 3 PMT con una tensione variabile da 1600 a 1900 mV. Abbiamo collegato il segnale dei 3 PMT ad un contatore passando attraverso un discriminatore per il conteggio degli impulsi.
+
 
 Per questa misura abbiamo impostato la minima soglia possibile per il discriminatore, ovvero 32~mV, allo scopo di ottenere una stima conservativa. 
 Abbiamo anche impostato una larghezza del segnale di uscita del discriminatore di 40 ns: in questo modo abbiamo eliminato la possibilità di avere conteggi accidentali causati dai piccoli rimbalzi successivi al segnale principale. 
@@ -181,7 +195,7 @@ Il numero dei conteggi è molto variabile e non ci permette di stabilire una rel
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline
-\textbf{HV (V)} & \textbf{PMT4 (Conteggi)} & \textbf{PMT6 (Conteggi)} & \textbf{Coincidenze casuali attese} \\
+\textbf{HV (V)} & \textbf{PMT4 (Conteggi)} & \textbf{PMT6 (Conteggi)} & \textbf{Coincidenze casuali attese (Hz)} \\
 \hline 
 1600 & 451 & 281 & 1.27e-06 \\
 \hline
@@ -235,11 +249,13 @@ Il numero dei conteggi è molto variabile e non ci permette di stabilire una rel
 \label{fig:coincidence}
 \end{figure}
 
-Utilizzando i dati in tabella~\ref{tab:random_coincidence}, abbiamo calcolato il tasso di coincidenze casuali attese tra il PMT 4 e 6. In questo modo abbiamo stabilito che mantenendoci al di sotto di una soglia di alimentazione di 1900 V il numero di coincidenze casuali non influisce in maniera significativa sul conteggio di coincidenze reali che ci aspettiamo. 
+Utilizzando i dati in tabella~\ref{tab:random_coincidence}, abbiamo calcolato il tasso di coincidenze casuali attese tra il PMT 4 e 6.
+
+Osservando il grafico in figura~\ref{fig:random_coincidence} ci siamo assicurati che mantenendoci al di sotto di una soglia di alimentazione di 1900 V il numero di coincidenze casuali non influisce in maniera significativa sul conteggio di coincidenze reali che ci aspettiamo.  
 
 Il calcolo è stato effettuato considerando una larghezza del segnale del discriminatore di 50 ns, e utilizzando la formula:
 \begin{equation}
-R_{c} = R_{4}*R_{6}*\Delta t
+R_{c} = R_{4} \times R_{6} \times \Delta t
 \label{eq:random_coincidence}
 \end{equation}
 Con $R_{c}$ uguale al tasso di coincidenze casuali attese, $R_{4,6}$ i conteggi al secondo misurati sul PMT 4 e 6, e $\Delta t = 100$~ns (pari alla somma della larghezza del segnale dei due discriminatori collegati in serie ai PMT) .
@@ -271,7 +287,7 @@ Il fatto che la curva sia leggermente spostata verso destra rispetto allo zero p
 \subsubsection{Misura delle coincidenze casuali}
 Abbiamo effettuato una misura delle coincidenze casuali aumentando il ritardo tra i segnali del PMT 4 e 6 ben oltre i valori suggeriti dalla curva in figura~\ref{fig:delay_curve}, in modo da abbattere il numero di coincidenze reali. Considerando che ci aspettavamo un numero di coincidenze casuali molto basse, abbiamo acquisito i dati per un periodo molto più lungo delle precedenti misure.
 
-Il risultato ottenuto è visibile in tabella~\ref{tab:random_coincidence_mesured}. Il risultato è di un ordine di grandezza superiore la nostra stima, quindi è possibile che in questo caso abbiamo sottostimato l'errore. 
+Il risultato ottenuto visibile in tabella~\ref{tab:random_coincidence_mesured}. Otteniamo un risultato di un ordine di grandezza superiore la nostra stima, quindi è possibile che in questo caso abbiamo sottostimato l'errore. 
 
 \begin{table}
 \centering
@@ -287,7 +303,8 @@ tempo (s) & Coincidenze & Tasso Coincidenze Casuali (Hz) & Tasso atteso (Hz) \\
 \end{table}
 
 \section{Misura dell'efficienza}
-L'efficienza ($\epsilon_x$) di un terzo PMT può essere ricavata considerando che $\epsilon_1*\epsilon_2=N_{4,6}/N_r$ e $\epsilon_1*\epsilon_2*epsilon_3=N_{4,5,6}/N_r$ (dove $N_r$ è il numero di eventi reali, $N_{4,6}$ e $N_{4,5,6}$ sono rispettivamente le coincidenze dei PMT 4 e 6, e dei PMT 4, 5 e 6; facendo il rapporto tra queste due relazioni si ottiene infatti $\epsilon_3=N_{4,5,6}/N_{4,6}$. Abbiamo scelto di ottenere l'efficienza del PMT 5, cioè quello centrale nella nostra configurazione, in modo tale da annullare errori dovuti all'accettanza geometrica, poichè chiaramente se una particella passa nei PMT esterni, determinando un segnale, dovrà farlo necessariamente anche nel terzo, ipotizzando ovviamente una traiettoria rettilinea. Quindi è stata fatta variare la tensione di alimentazione del PMT 5 in modo tale da ottenere una curva di efficienza assoluta visibile nel grafico~\ref{fig:efficiency} .
+L'efficienza ($\epsilon_x$) di un terzo PMT può essere ricavata considerando che $\epsilon_1\times \epsilon_2=N_{4,6}/N_r$ e $\epsilon_1\times \epsilon_2\times \epsilon_3=N_{4,5,6}/N_r$ (dove $N_r$ è il numero di eventi reali, $N_{4,6}$ e $N_{4,5,6}$ sono rispettivamente le coincidenze dei PMT 4 e 6, e dei PMT 4, 5 e 6; facendo il rapporto tra queste due relazioni si ottiene infatti $\epsilon_3=N_{4,5,6}/N_{4,6}$. Abbiamo scelto di ottenere l'efficienza del PMT 5, cioè quello centrale nella nostra configurazione, in modo tale da annullare errori dovuti all'accettanza geometrica, poichè chiaramente se una particella passa nei PMT esterni, determinando un segnale, dovrà farlo necessariamente anche nel terzo, ipotizzando ovviamente una traiettoria rettilinea. Quindi è stata fatta variare la tensione di alimentazione del PMT 5 in modo tale da ottenere una curva di efficienza assoluta, ottenendo i risultati osservabili nel grafico~\ref{fig:efficiency}.
+
 I valori delle tensioni applicate ai PMT 4 e 6 sono quelle considerate ottimali nei punti precedenti, mentre per ogni punto del grafico la presa dati ha avuto una durata di $t=100s$ e la soglia del discriminatore è stata fissata a 60mV per tutti i PMT.
 \subsection{Risultati}
 Dal grafico~\ref{fig:efficiency} si vede chiaramente che, aumentando la tensione, l'efficienza aumenta tendendo a 1, come ci si aspetterebbe, dato che il PMT conta più eventi veri mentre le coincidenze casuali rimangono trascurabili, come si è visto al punto precedente. Infatti attorno a valori di tensione di alimentazione di $V=1860V$ si ha un'efficienza $\epsilon_3=0.9846\pm0.8$. L'errore è stato calcolato considerando una distribuzione poissoniana degli eventi.
@@ -301,11 +318,6 @@ Dal grafico~\ref{fig:efficiency} si vede chiaramente che, aumentando la tensione
 
 \label{sec:efficienza} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Conclusioni}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
