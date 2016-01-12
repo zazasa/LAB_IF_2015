@@ -1,0 +1,42 @@
+reset
+
+f(x)=A+B*exp(-C*x)*cos(D*x+E)
+g(x)=F+H*exp(-I*x)*cos(J*x+K)
+
+A=-0.32
+B=0.05
+C=0.0013
+D=0.034
+E=3.9
+
+F=-0.375
+H=0.055
+I=0.0013
+J=0.034
+K=1.1
+
+fit f(x) "151211_relax_basso_e_alto_inizio.txt" using ($1-1399):2 via A,B,C,D,E
+
+reset
+
+fit g(x) "151211_relax_basso_e_alto_fine.txt" using ($1-4010):2 via F,H,I,J,K
+
+set xrange [0:1200]
+set yrange [-0.44:-0.24]
+
+set xlabel "t [s]" font "Times-Roman, 30"
+set ylabel "V [V]" font "Times-Roman, 30"
+unset key
+set title "Oscillazioni di rilassamento libere"
+set xtics font "Times-Roman, 25"
+set ytics font "Times-Roman, 25"
+
+set samples 1000
+
+#set arrow from 1400,-0.44 to 1400,-0.24 nohead
+#set arrow from 2350,-0.44 to 2350,-0.24 nohead
+
+#set arrow from 4011,-0.44 to 4011,-0.24 nohead
+#set arrow from 5150,-0.44 to 5150,-0.24 nohead
+
+plot f(x), g(x), "151211_relax_basso_e_alto_inizio.txt" using ($1-1399):2, "151211_relax_basso_e_alto_fine.txt" using ($1-4010):2

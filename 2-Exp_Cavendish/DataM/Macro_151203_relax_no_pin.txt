@@ -1,0 +1,20 @@
+set xrange [0:*]
+f(x)=A+B*exp(-C*x)*cos(D*x+E)
+
+A=1.3
+B=4.1
+C=0.0023
+D=0.0345
+E=2.3
+fit f(x) "151203_relax-no-pin.txt" using 1:2 via A,B,C,D,E
+
+set xrange [0:350]
+set yrange [-3:5]
+set xlabel "t [s]" font "Times-Roman, 30"
+set ylabel "V [V]" font "Times-Roman, 30"
+unset key
+set title "Oscillazioni di rilassamento libere"
+set xtics font "Times-Roman, 25"
+set ytics font "Times-Roman, 25"
+
+plot f(x), "151203_relax-no-pin.txt" using 1:2

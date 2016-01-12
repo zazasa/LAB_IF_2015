@@ -1,0 +1,5 @@
+set xrange [0:3000]
+
+plot "./151209_forzata_2.txt" using ($1+1636.2):2, "./151209_forzata_1.txt"
+
+#plot "./151209_forzata_2.txt" using ($1-121.4+1386.8):2, "./151209_forzata_1.txt"

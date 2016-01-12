@@ -1,0 +1,25 @@
+set xrange [0:*]
+f(x)=A+B*exp(-C*x)*cos(D*x+E)
+
+A=0.1
+B=1.5
+C=0.0013
+D=0.034
+E=3.1
+fit f(x) "151204_calibration_free1.txt" using 1:2 via A,B,C,D,E
+
+set xrange [0:900]
+set yrange [*:*]
+set xlabel "t [s]" font "Times-Roman, 30"
+set ylabel "V [V]" font "Times-Roman, 30"
+#unset key
+set title "Oscillazioni di rilassamento libere"
+set xtics font "Times-Roman, 25"
+set ytics font "Times-Roman, 25"
+
+set samples 10000
+
+#set arrow from 30,-0.94 to 30,-0.84 nohead
+#set arrow from 600,-0.94 to 600,-0.84 nohead
+
+plot f(x), "151204_calibration_free1.txt" using 1:2
